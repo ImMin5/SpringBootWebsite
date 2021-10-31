@@ -10,11 +10,17 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.*;
 
 class MemoryMemberRepositoryTest {
+
+    //cmd + shif + t
     MemoryMemberRepository reposiroty = new MemoryMemberRepository();
 
     @AfterEach
     public void afterEach(){
         reposiroty.clearStore();
+    }
+    @Test
+    public void join(){
+
     }
     @Test
     public void save() {
@@ -37,6 +43,8 @@ class MemoryMemberRepositoryTest {
         Member member2 = new Member();
         member2.setName("Minho2");
         reposiroty.save(member2);
+
+
 
         Member result =reposiroty.findByName("Minho1").get();
 

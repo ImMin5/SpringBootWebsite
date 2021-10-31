@@ -12,7 +12,7 @@ public class SpringController {
 
     @GetMapping("hello") //GET메소드
     public String hello(Model model) {
-        model.addAttribute("data", "Heelo");
+        model.addAttribute("data", " Heello4");
         return "hello";  //templates에 있는 hello.html을 렌더링 해준다.
 
 
