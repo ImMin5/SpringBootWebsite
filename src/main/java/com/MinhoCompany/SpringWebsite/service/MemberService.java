@@ -3,12 +3,19 @@ package com.MinhoCompany.SpringWebsite.service;
 import com.MinhoCompany.SpringWebsite.domain.Member;
 import com.MinhoCompany.SpringWebsite.repository.MemberRepository;
 import com.MinhoCompany.SpringWebsite.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-public class MemverService {
-    public final MemberRepository memberRepository = new MemoryMemberRepository();
+//@Service
+public class MemberService {
+    public final MemberRepository memberRepository ;
+    //@Autowired
+    public MemberService(MemberRepository memberRepository){
+        this.memberRepository = memberRepository;
+    }
 
     /*
      * 회원 가입
