@@ -14,7 +14,6 @@
 
 
 
-
 ## 인텔리제이 생산성 향상 단축키
 - shift + f6 (rename 할때 유용)
 - cmd + shift + t (Test 생성시 편리, Test class에서 진행)
@@ -22,7 +21,11 @@
 - cmd + option + v (변수 추출하기)
 - cmd + r
 - cmd + 좌클릭 (클래소 혹은 메소드 정의로 이동)
+- cmd + n (getter setter)
 
+##Spring
+- @AutoWired 로 컴포넌트를 연결
+- 스프링 빈 등록시 싱글톤으로 등록된다
 
 ## JAVA
 - HashMap,ConCurrentHashMap,HashTable 차이
